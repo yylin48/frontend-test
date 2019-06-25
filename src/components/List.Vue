@@ -13,17 +13,15 @@
               <th scope="col">Keyword</th>
               <th scope="col">URL</th>
               <th scope="col">Line ID</th>
-              <th scope="col">Category</th>
               <th></th>
             </tr>
           </thead>
           <tbody>
             <tr v-for="(user) in list" :key="user.name">
               <td>{{ user.name }}</td>
-              <td>{{ user.keyword }}</td>
+              <td >{{ user.keyword }}</td>
               <td>{{ user.url }}</td>
               <td>{{ user.line_id }}</td>
-              <td>{{ user.category }}</td>
               <td>
                 <button type="button" class="btn btn-warning btn-sm">Update</button>
                 <button type="button" class="btn btn-danger btn-sm">Delete</button>
